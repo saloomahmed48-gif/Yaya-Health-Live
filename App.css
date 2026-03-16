@@ -1,0 +1,25 @@
+.app-container {
+  width: 100vw; height: 100vh; position: relative; overflow: hidden;
+  background: linear-gradient(160deg, #d3e8ff 0%, #e8f5e9 50%, #d8f0ff 100%);
+  font-family: 'Syne', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+}
+.top-bar {
+  margin-top: 40px; padding: 10px 30px; background: rgba(255,255,255,0.6); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
+  border-radius: 30px; display: flex; align-items: center; gap: 10px; font-weight: 800; color: #1e3a8a; font-size: 1.2rem; z-index: 10;
+}
+.live-dot { width: 10px; height: 10px; background: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; }
+.camera-view { position: absolute; inset: 0; z-index: 1; display: flex; justify-content: center; align-items: center; }
+.video-feed { width: 100%; height: 100%; object-fit: cover; }
+.glass-dock {
+  margin-bottom: 40px; padding: 15px 25px; background: rgba(255,255,255,0.5); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border-radius: 50px; border: 1px solid rgba(255,255,255,0.8); display: flex; gap: 15px; align-items: center; z-index: 10; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.icon-btn {
+  width: 50px; height: 50px; border-radius: 50%; background: #ffffff; border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.3s;
+}
+.icon-btn:hover {
+  transform: scale(1.1);
+}
+.blue-icon { color: #3b82f6; } 
+.mic-btn { width: 65px; height: 65px; background: #ecfdf5; border: 2px solid #a7f3d0; color: #10b981; }
+.stop-btn { background: #fef2f2; border: 2px solid #fecaca; color: #ef4444; }
